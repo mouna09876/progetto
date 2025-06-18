@@ -1,3 +1,6 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+	
+})
 scene.setBackgroundColor(1)
 let bimbo = sprites.create(img`
     . . . . . f f f f f . . . . . . 
@@ -19,5 +22,5 @@ let bimbo = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(bimbo, 100, 0)
 game.onUpdate(function () {
-    bimbo.x = 0
+    bimbo.ay = 500
 })
