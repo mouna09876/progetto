@@ -25,6 +25,7 @@ bimbo = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(bimbo, 100, 0)
 scene.cameraFollowSprite(bimbo)
+tiles.setCurrentTilemap(tilemap`livello1`)
 game.onUpdate(function () {
     bimbo.ay = 500
 })
