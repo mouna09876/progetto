@@ -17,3 +17,8 @@ let bimbo = sprites.create(img`
     . . . . f e e f e e f . . . . . 
     . . . . f e e f e e f . . . . . 
     `, SpriteKind.Player)
+controller.moveSprite(bimbo, 100, 0)
+game.onUpdate(function () {
+    let mySprite: Sprite = null
+    mySprite.x = 0
+})
