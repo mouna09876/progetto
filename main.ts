@@ -1,8 +1,11 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-	
+    if (bimbo.vy == 0) {
+        bimbo.vy += -250
+    }
 })
+let bimbo: Sprite = null
 scene.setBackgroundColor(1)
-let bimbo = sprites.create(img`
+bimbo = sprites.create(img`
     . . . . . f f f f f . . . . . . 
     . . . f f f 2 2 2 f f f . . . . 
     . . . f 2 2 2 2 2 2 2 f . . . . 
