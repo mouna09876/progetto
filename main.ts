@@ -1,4 +1,3 @@
-scene.setBackgroundColor(5)
 scene.setBackgroundColor(1)
 let bimbo = sprites.create(img`
     . . . . . f f f f f . . . . . . 
