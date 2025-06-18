@@ -19,6 +19,5 @@ let bimbo = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(bimbo, 100, 0)
 game.onUpdate(function () {
-    let mySprite: Sprite = null
-    mySprite.x = 0
+    bimbo.x = 0
 })
