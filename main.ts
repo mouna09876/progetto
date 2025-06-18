@@ -24,6 +24,7 @@ bimbo = sprites.create(img`
     . . . . f e e f e e f . . . . . 
     `, SpriteKind.Player)
 controller.moveSprite(bimbo, 100, 0)
+scene.cameraFollowSprite(bimbo)
 game.onUpdate(function () {
     bimbo.ay = 500
 })
